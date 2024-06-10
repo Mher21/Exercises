@@ -89,3 +89,12 @@ In the provided code, the `plot_the_score()` function is responsible for visuali
    - Rapid fluctuations or a lack of significant improvement may suggest that the model requires further adjustments, such as fine-tuning hyperparameters or increasing training data.
 
 Overall, the `plot_the_score()` function facilitates the visual analysis of the training process, enabling users to monitor the performance of the Matrix Factorization model and make informed decisions to improve its effectiveness.
+
+## Math formulas
+
+
+![Picture 1](./formulas/1.png)
+
+![Picture 2](./formulas/2.png)
+
+![Picture 3](./formulas/3.png)

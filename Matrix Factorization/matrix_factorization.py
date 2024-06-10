@@ -94,7 +94,7 @@ class MatrixFactorization():
                 self.evaluate_the_model(epoch)
                 self.early_stopping(epoch)
         
-    def get_user_pred_ratings(self,user_ids):
+    def get_user_pred_ratings(self,user_ids) :
         print("Loading predicting ratings and recommendations...")
         recomms = {user_id: [] for user_id in user_ids}
         for u in range(self.n_users):
@@ -109,7 +109,7 @@ class MatrixFactorization():
     def plot_the_score(self, ):
         plt.figure(figsize=(18, 6))
         plt.plot(range(1, 1 + len(self.mse_lst)), self.mse_lst, marker='o')
-        plt.title("SGD Custom Prepared USER & ITEM vector's Tr MSE loss vs epochs", fontsize=20)
+        plt.title("GD USER & ITEM vector's MSE loss vs epochs", fontsize=20)
         plt.xlabel('Number of epochs', fontsize=18)
         plt.ylabel('mean square error', fontsize=18)
         plt.xticks(range(1, self.conv_epoch_num + 5), fontsize=15, rotation=90)
